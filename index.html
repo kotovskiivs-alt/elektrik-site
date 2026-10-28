@@ -288,6 +288,8 @@ section { padding-block: clamp(var(--space-12), 7vw, var(--space-24)); }
       <a href="#kontakty">Контакты</a>
     </nav>
     <a class="btn btn-accent header-cta" href="#kalkulyator">Рассчитать стоимость</a>
+    <a href="tel:+79698324789" class="btn btn-secondary">Позвонить: 8 (969) 832-47-89</a>
+<a href="https://max.ru/u/f9LHodD0cOKLGqssF7qo6n3_l4jz5PB2t560hCcUEd0Wa13mFHj9s9XcJnU" target="_blank" rel="noopener" class="btn btn-primary">Написать в MAX</a>
   </div>
 </header>
 
@@ -1151,47 +1153,6 @@ section { padding-block: clamp(var(--space-12), 7vw, var(--space-24)); }
   });
 })();
 
-<script>
-(function () {
-  var maxUrl = "https://max.ru/u/f9LHodD0cOKLGqssF7qo6n3_l4jz5PB2t560hCcUEd0Wa13mFHj9s9XcJnU";
 
-  var header = document.querySelector("header") || document.querySelector(".header") || document.querySelector("nav");
-  if (!header) return;
-
-  var btn = document.createElement("a");
-  btn.href = maxUrl;
-  btn.target = "_blank";
-  btn.rel = "noopener";
-  btn.textContent = "Написать в MAX";
-  btn.style.cssText = [
-    "display:inline-flex",
-    "align-items:center",
-    "gap:8px",
-    "margin-left:10px",
-    "padding:10px 16px",
-    "border-radius:999px",
-    "background:#0a84ff",
-    "color:#fff",
-    "font-weight:700",
-    "text-decoration:none",
-    "white-space:nowrap",
-    "box-shadow:0 4px 14px rgba(10,132,255,.25)"
-  ].join(";");
-
-  btn.addEventListener("mouseenter", function () {
-    btn.style.background = "#0069d9";
-  });
-  btn.addEventListener("mouseleave", function () {
-    btn.style.background = "#0a84ff";
-  });
-
-  var phone = header.querySelector('a[href^="tel:"]');
-  if (phone && phone.parentElement) {
-    phone.parentElement.appendChild(btn);
-  } else {
-    header.appendChild(btn);
-  }
-})();
-</script>
 </script></body>
 </html>
